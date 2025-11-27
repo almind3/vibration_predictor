@@ -1,0 +1,31 @@
+{
+  "cpu": 0,
+  "environment": [],
+  "environmentFiles": [],
+  "essential": true,
+  "image": "557500231841.dkr.ecr.us-east-1.amazonaws.com/vibration-predictor@sha256:5aaae28836916e022c6e40fb30c3a54316c11b39743efb7c76301a8ad518cb29",
+  "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group": "/ecs/",
+      "awslogs-create-group": "true",
+      "awslogs-region": "us-east-1",
+      "awslogs-stream-prefix": "ecs"
+    },
+    "secretOptions": []
+  },
+  "mountPoints": [],
+  "name": "fast-api-vib-predict",
+  "portMappings": [
+    {
+      "appProtocol": "http",
+      "containerPort": 8080,
+      "hostPort": 8080,
+      "name": "8080",
+      "protocol": "tcp"
+    }
+  ],
+  "systemControls": [],
+  "ulimits": [],
+  "volumesFrom": []
+}
